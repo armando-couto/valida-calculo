@@ -1,0 +1,6 @@
+NUMERO,REGRA,CORRETO
+1,1,true
+2,4,false
+3,5,true
+4,2,false
+5,1,false
