@@ -29,11 +29,11 @@ public class ImpostoUtil implements Serializable {
 		return instance;
 	}
 
-	public Boolean comparar(BigDecimal valorImposto, BigDecimal valor, BigDecimal aliquota) {
+	public Character comparar(BigDecimal valorImposto, BigDecimal valor, BigDecimal aliquota) {
 		BigDecimal calculo = valor.multiply(aliquota).divide(porcentagem, 2);
 		if(valorImposto.doubleValue() == calculo.doubleValue())
-			return true;
+			return 'S';
 		else
-			return false;
+			return 'N';
 	}
 }

@@ -18,7 +18,7 @@ public class Resposta implements Serializable {
 	
 	private Regra regra;
 	
-	private Boolean correto;
+	private Character correto;
 	
 	public Resposta() {}
 
@@ -88,11 +88,11 @@ public class Resposta implements Serializable {
 		this.regra = regra;
 	}
 
-	public Boolean getCorreto() {
+	public Character getCorreto() {
 		return correto;
 	}
 
-	public void setCorreto(Boolean correto) {
+	public void setCorreto(Character correto) {
 		this.correto = correto;
 	}
 }
